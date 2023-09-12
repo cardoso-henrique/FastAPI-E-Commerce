@@ -1,44 +1,50 @@
 # FastAPI-E-Commerce
-FastAPI E-Commerce, API desenvolvida para testes locais de CRUD e utilizada para estudos, desenvolvido por: Henrique Cardoso Lana.
 
-Clone o projeto na sua máquina:
+![Python 3.10.1](https://img.shields.io/badge/Python-3.10.1-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/cardoso-henrique/FastAPI-E-Commerce/blob/main/LICENSE)![Tamanho do Repositório](https://img.shields.io/github/repo-size/cardoso-henrique/FastAPI-E-Commerce)
 
-Execute os comandos dentro da pasta para instalar as dependencias nescessarias:
+FastAPI E-Commerce é uma API desenvolvida para testes locais de CRUD e utilizada para fins de estudo. Desenvolvida por Henrique Cardoso Lana.
 
-Da FastApi
+Para clonar e utilizar o projeto em sua máquina, siga os passos abaixo:
 
-```
-pip install fastapi
-```
-E da Uvicorn para rodar localmente
+1. Execute os seguintes comandos dentro da pasta para instalar as dependências necessárias:
 
-```
-pip install uvicorn
-```
-Para executar localmente execute este comando:
+   Para instalar o FastAPI:
 
-```
-uvicorn main:app --reload
-```
+   ```
+   pip install fastapi
+   ```
 
-Para paralizar a execução aperte os botões ctrl+c do teclado no prompt de comando de execução
+   E para instalar o Uvicorn para rodar localmente:
 
-A API irá inicializar no link:
+   ```
+   pip install uvicorn
+   ```
+
+2. Para executar localmente, utilize o seguinte comando:
+
+   ```
+   python -m uvicorn main:app --reload
+   ```
+
+3. Para interromper a execução, pressione as teclas `Ctrl+C` no prompt de comando em execução.
+
+A API será inicializada e estará disponível no seguinte link:
 
 ```
 http://127.0.0.1:8000/
 ```
 
-A sua documentação da [Swagger](https://github.com/swagger-api/swagger-ui) poderá ser acessada em:
+A documentação Swagger da API pode ser acessada em:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-A sua documentação da  [ReDoc](https://github.com/Rebilly/ReDoc) poderá ser acessada em:
+Além disso, a documentação ReDoc da API está disponível em:
 
 ```
 http://127.0.0.1:8000/redoc
 ```
 
-Agradecimento a [FastApi](https://github.com/tiangolo/fastapi) pelo framework.
+Agradecemos à equipe do [FastAPI](https://github.com/tiangolo/fastapi) pelo framework excepcional que tornou este projeto possível.
