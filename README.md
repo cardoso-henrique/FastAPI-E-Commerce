@@ -7,18 +7,10 @@ FastAPI E-Commerce é uma API desenvolvida para testes locais de CRUD e utilizad
 
 Para clonar e utilizar o projeto em sua máquina, siga os passos abaixo:
 
-1. Execute os seguintes comandos dentro da pasta para instalar as dependências necessárias:
-
-   Para instalar o FastAPI:
+1. Execute os seguinte comando dentro da pasta para instalar as dependências necessárias:
 
    ```
-   pip install fastapi
-   ```
-
-   E para instalar o Uvicorn para rodar localmente:
-
-   ```
-   pip install uvicorn
+   py -m pip install -r requirements.txt
    ```
 
 2. Para executar localmente, utilize o seguinte comando:
@@ -40,6 +32,7 @@ A documentação Swagger da API pode ser acessada em:
 ```
 http://127.0.0.1:8000/docs
 ```
+![Swagger](https://cdn.discordapp.com/attachments/1109930711055618160/1154844086809923686/image.png)
 
 Além disso, a documentação ReDoc da API está disponível em:
 
@@ -47,4 +40,6 @@ Além disso, a documentação ReDoc da API está disponível em:
 http://127.0.0.1:8000/redoc
 ```
 
-Agradecemos à equipe do [FastAPI](https://github.com/tiangolo/fastapi) pelo framework excepcional que tornou este projeto possível.
+![ReDoc](https://cdn.discordapp.com/attachments/1109930711055618160/1154844531066421309/image.png)
+
+Agradecemos à equipe do [FastAPI](https://fastapi.tiangolo.com/pt/) pelo framework excepcional que tornou este projeto possível.
