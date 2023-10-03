@@ -1,0 +1,13 @@
+## [0.0.2] - 03/10/2023
+- Melhoria em traduções e mensagens.
+- Melhoria no comando de execução local.
+- Melhoria e implementação de requirements para instalar as dependências de forma mais prática.
+- Adicionado arquivo models para gerenciar as configurações de classes de requisições.
+- POST de produtos: melhorias de mensagem de retorno e não precisa mais passar o ID para seu cadastro.
+- Status code 201 para criações.
+- Mensagem de resposta inclui id pesquisado.
+- Inserido path parameters na descrição.
+- Melhorado header parameters descrição preparado para futura implantação de tokens.
+- Início da construção do banco de dados com a injeção de dependência e sleep no teste se a api está online.
+- Page objects para as rotas de produtos e pedidos.
+- Mensagem de retorno ao deletar produtos.

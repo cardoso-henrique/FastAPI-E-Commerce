@@ -1,0 +1,84 @@
+# Ignorar bibliotecas Python
+/venv/
+/.venv/
+
+# Ignorar os arquivos de dependências Python gerados por pip
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar diretórios de ambiente virtual (ex: virtualenv, venv)
+env/
+bin/
+include/
+lib/
+lib64/
+share/
+.python-version
+
+# Ignorar o diretório de cache do pip
+.pip_cache/
+
+# Ignorar arquivos de bloqueio de versão
+pip-selfcheck.json
+
+# Ignorar os arquivos gerados pelo FastAPI, como a pasta "__pycache__"
+app/__pycache__/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Ignorar históricos do Git
+.gitattributes
+.git/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# Ignorar arquivos de configuração de trabalho do VSCode
+.vscode/
+
+# Ignorar diretórios de build e artefatos de compilação
+/build/
+/dist/
+*.egg-info/
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+*~
+
+# Ignorar arquivos de documentação gerados
+/docs/_build/
+/site/
+
+# Ignorar arquivos de teste
+/tests/

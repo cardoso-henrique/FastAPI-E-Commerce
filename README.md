@@ -16,7 +16,7 @@ Para clonar e utilizar o projeto em sua máquina, siga os passos abaixo:
 2. Para executar localmente, utilize o seguinte comando:
 
    ```
-   python -m uvicorn main:app --reload
+   python FastAPI-E-Commerce.py
    ```
 
 3. Para interromper a execução, pressione as teclas `Ctrl+C` no prompt de comando em execução.
@@ -32,7 +32,7 @@ A documentação Swagger da API pode ser acessada em:
 ```
 http://127.0.0.1:8000/docs
 ```
-![Swagger](https://cdn.discordapp.com/attachments/1109930711055618160/1154844086809923686/image.png)
+![Swagger](https://cdn.discordapp.com/attachments/1158851542904999987/1158875068714188891/image.png?ex=651dd603&is=651c8483&hm=afb61e7cf4976ef0979dd349b2708bc689aff146f00a5645fd09b41bc82ba9e6&)
 
 Além disso, a documentação ReDoc da API está disponível em:
 
@@ -40,6 +40,7 @@ Além disso, a documentação ReDoc da API está disponível em:
 http://127.0.0.1:8000/redoc
 ```
 
-![ReDoc](https://cdn.discordapp.com/attachments/1109930711055618160/1154844531066421309/image.png)
+![ReDoc](https://cdn.discordapp.com/attachments/1158851542904999987/1158874720998010880/image.png?ex=651dd5b0&is=651c8430&hm=e86c6a19addfb226918670c4c7d4c2b9b23a3d7719cbae165d4666aea8e87de9&)
 
 Agradecemos à equipe do [FastAPI](https://fastapi.tiangolo.com/pt/) pelo framework excepcional que tornou este projeto possível.
+
