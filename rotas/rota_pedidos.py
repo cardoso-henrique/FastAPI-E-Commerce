@@ -46,7 +46,10 @@ async def list_pedidos():
                     response_model=Pedido,
                     summary="Consultar Pedido por ID",
                     description="Retorna um pedido por seu ID.")
-async def get_pedido(pedido_id: uuid.UUID = Path(title='ID do tipo uui', description='Deve ser do tipo uuid')):
+async def get_pedido(pedido_id: uuid.UUID = Path(
+                                                default=None,
+                                                title='ID do tipo uui', 
+                                                description='Deve ser do tipo uuid')):
     matching_pedidos = [o for o in pedidos_db if o["id"] == pedido_id]
     if not matching_pedidos:
         raise HTTPException(status_code=404, detail=f"Pedido com ID {pedido_id} não encontrado")

@@ -52,8 +52,11 @@ async def list_produtos():
                     response_model=Produto,
                     summary="Lista de Produtos por ID",
                     description="Retorna o produto por seu ID.")
-async def get_produto(produto_id: uuid.UUID = Path(title='ID do tipo uui', 
-                                                    description='Deve ser do tipo uuid')):
+async def get_produto(produto_id: uuid.UUID = Path(
+                                                    default=None,
+                                                    title='ID do tipo uui', 
+                                                    description='Deve ser do tipo uuid'
+                                                    )):
     encontrou_produtos = [p for p in produtos_db if p["id"] == produto_id]
     if not encontrou_produtos:
         raise HTTPException(
@@ -76,7 +79,10 @@ async def update_produto(produto_id: uuid.UUID, updated_produto: Produto):
                     response_model=Produto_Deletar,
                     summary="Excluir Produto por ID",
                     description="Exclui o produto por seu ID.")
-async def delete_produto(produto_id: uuid.UUID = Path(title='ID do tipo uui', description='Deve ser do tipo uuid')):
+async def delete_produto(produto_id: uuid.UUID = Path(
+                                                        default=None,
+                                                        title='ID do tipo uui', 
+                                                        description='Deve ser do tipo uuid')):
     for idx, produto in enumerate(produtos_db):
         if produto["id"] == produto_id:
             deleted_produto = produtos_db.pop(idx)
